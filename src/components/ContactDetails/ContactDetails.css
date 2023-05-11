@@ -1,0 +1,44 @@
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+
+.contact__icon {
+    width: 14px;
+    height: 14px;
+    align-self: center;
+}
+
+.contact__info {
+    margin: 0;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000;
+}
+
+.contact__info_number{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 920px) {
+    .contacts {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contact__info {
+        font-size: 10px;
+        line-height: 150%;
+    }
+    .contacts{
+        gap: 30px;
+    }
+}
