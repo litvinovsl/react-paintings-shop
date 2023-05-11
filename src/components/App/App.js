@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer';
 import Main from '../Main/Main';
 import products from '../../data/products';
 import { useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
   const [productsData, setProductsData] = useState([])
@@ -16,14 +17,21 @@ function App() {
     }, 1000)
   });
 
-  loadProducts.then(data => { setProductsData(data); console.log(productsData) }).catch(err => console.error(err));
+  loadProducts.then(data => { setProductsData(data) }).catch(err => console.error(err));
 
   return (
     <CurrentUserContext.Provider
-      value={{products}}>
+      value={{ products }}>
       <div className="App">
         <Header />
-        <Main />
+        <Switch>
+          <Route exact path='/'>
+            <Main title='Картины эпохи Возрождения' />
+          </Route>
+          <Route exact path='/cart'>
+            <Main title='Корзина' />
+          </Route>
+        </Switch>
         <Footer />
       </div>
     </CurrentUserContext.Provider>
