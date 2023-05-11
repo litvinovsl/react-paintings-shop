@@ -4,8 +4,8 @@ import ContactDetails from '../ContactDetails/ContactDetails';
 
 function Footer() {
   return (
-    <div class="footer">
-        <div class="footer__box">
+    <div className="footer">
+        <div className="footer__box">
             <HeaderNavMenu />
             <ContactDetails />
         </div>

@@ -3,8 +3,8 @@ import Cards from '../Cards/Cards';
 
 function Main() {
     return (
-        <div class="main-page">
-            <h2 class="main-page__h">Картины эпохи Возрождения</h2>
+        <div className="main-page">
+            <h2 className="main-page__h">Картины эпохи Возрождения</h2>
             <Cards />
         </div>
     );

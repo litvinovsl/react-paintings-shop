@@ -4,8 +4,8 @@ import Search from '../Search/Search';
 
 function Header() {
   return (
-    <div class="header">
-        <div class="header__box">
+    <div className="header">
+        <div className="header__box">
             <HeaderNavMenu />
             <Search />
         </div>

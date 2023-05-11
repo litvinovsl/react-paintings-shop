@@ -6,6 +6,18 @@ function Cards() {
         <div>
             <section className="elements">
                 <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+
             </section>
             {/* <section className="elements">
                 <Card />
