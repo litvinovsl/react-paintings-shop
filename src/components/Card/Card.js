@@ -1,8 +1,15 @@
 import './Card.css';
+// import { useContext } from 'react';
+// import { CurrentUserContext } from '../../context/CurrentUserContext';
 import addIcon from '../../images/add.svg';
-import image from '../../images/vechere.png'
+import image from '../../images/vechere.png';
 
 function Card() {
+    // const context = useContext(CurrentUserContext);
+	// const {
+	// 	products
+	// } = context;
+    // console.log('Card', products)
     return (
         <div className="card">
             <img className="card__img" src={image} alt='#' />
